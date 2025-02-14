@@ -1,4 +1,8 @@
-# test-config.json
-# test-template
+# */test-config.json
+*/test-template
+*/test-template/
+*/test-template/*
 
-/output
+*/output
+*/output/
+*/output/*

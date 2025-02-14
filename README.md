@@ -36,6 +36,12 @@ The tool's main advantage is its ability to perform all replacements automatical
 
 # How to run
 
+Install the dependencies:
+
+```bash
+pip3 install -r requirements.txt
+```
+
 Since LAWC is a comand-line tool, it should be run like this:
 
 ```bash
@@ -47,3 +53,11 @@ It will then prompt the user, `input()`-by-`input()`, for the following:
 1. The absolute path to the template Lambda function folder. (If the folder is not found, or if the folder is empty, the tool will raise a user-freindly error and exit immediately.)
 2. The absolute path to the JSON configuration file. (If the JSON file is not found, or if the content of the JSON file ain't valid, the tool will raise a user-freindly error and exit immediately.)
 3. The absolute path to the destination folder, where the fully configured, no-placeholder-left-behind Lambda function will be saved.
+
+You can also use our new UI to run the tool.
+
+```bash
+python3 -m streamlit run ui.py --server.port 2050
+```
+
+This will open a new browser window with a user-friendly Streamlit UI that allows you to input the required information. A magic of it is that you can just paste the content of your JSON configuration file right into the text area instead of having to input the absolute path to it.

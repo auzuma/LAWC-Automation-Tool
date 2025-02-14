@@ -1,0 +1,6 @@
+{
+    "my_secret_key_template": "[REDACTED]",
+    "file_name_maps (Special Property)": { 
+        "PlaceholderName.ts": "ConfiguredName.ts"
+    }
+}
